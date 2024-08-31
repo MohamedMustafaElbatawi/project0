@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --onecolor: #2c6dcfb9;
+    --twocolor: #cf2c2c;
+}
+
+body {
+    /* background-color: #00030050; */
+    background: linear-gradient(#111, #222);
+    height: 150vh;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    /* background-color: antiquewhite; */
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 15px 3px red;
+    transition: .2s;
+}
+
+header:hover{
+    box-shadow: 0px 1px 15px 3px #fff;
+
+}
+
+.head h1 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    /* color: #cf2c2c; */
+    padding-left: 20px;
+    color: red;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.head:hover h1 {
+    color: #fff;
+}
+
+
+
+
+
+
+.input {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    margin-right: 10px;
+    font-size: 19px;
+    color: red;
+    /* color: #cf2c2c; */
+    padding: 3px 0;
+}
+
+.in1 {
+    /* padding: 10px; */
+    transition: .2s;
+}
+
+.in1 input,
+.in2 input {
+    color: #fff;
+    font-size: 19px;
+    padding: 3px 0;
+    border:2px solid white ;
+    outline:2px solid white;
+    background-color: #222
+}
+
+
+.in1:hover label {
+    color: white;
+}
+.in2:hover label {
+    color: white;
+}
+
+input:focus  {
+    border:2px solid white ;
+    outline:2px solid white;
+}
+
+::placeholder{
+    color: whitesmoke;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+nav{
+    margin-top: 25px;
+    width: 100%;
+    /* background-color: aqua; */
+
+}
+
+.name{
+    display: flex;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: bold;
+    justify-content: space-around;
+    text-transform: capitalize;
+    border-top: 2px solid red;
+}
+.word{
+    color: white;
+    transition: .2s;
+    position: relative;
+}
+
+.word::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom:-3px ;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transform-origin: left;
+    transition: .6s;
+    transform-origin: .5s;
+}
+
+.word:hover::before{
+    width: 100%;
+}
+
+.word:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reverse{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+
+section{
+    width: 40%;
+    margin-left: 40px;
+}
+
+section h2{
+    font-size: 32px;
+    font-weight: 750;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+section .lorem{
+    font-size: 16px;
+    line-height: 24px;
+    text-shadow: 0 2px 1px  red;
+}
+
+
+
+aside{
+    width: 20%;
+    /* height: 80%; */
+    margin-right: 100px;
+}
+
+aside img{
+    width: 100%;
+    border-radius: 10px;
+    transition: .6s;
+    transition-delay: .2s;
+    transform: rotate(0deg);
+}
+
+img:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -12px 16px -9px red;
+}
+
+
+
+.om{
+    color: white;
+    padding: 6px 0;
+}
+
+
+
+
+
+
+
+
+
+
